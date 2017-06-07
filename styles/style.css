@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html{
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 5vh;
+  background-color: none;
+  float: left; 
+  z-index: 1; 
+}
+
+li a{
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 5px;
+  width: 20px;
+  background-color: #e64c4e;
+  color: #e64c4e;
+  overflow: hidden;
+  text-align: center;
+  line-height: 40px;
+  transition: .6s;
+}
+
+li a:hover {
+  width: 150px;
+  background-color: #e64c4e;
+  color: #fff32c;
+  transition: .6s;
+}
+
+#metolius-pic {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  box-sizing: border-box;
+  width: 50vw;
+  height: auto;
+  float: right;
+  margin-top: 10vh;
+  padding-right: 10vw;
+}
+
+#attributes {
+  list-style-type: none;
+  color: #e64c4e;
+  font-size: 2.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  text-align: right;
+}
+
+.page {
+  height: 95vh;
+  width: 100%;
+}
+
+.content {
+  width: 50%;
+  height: 95%;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+}
+
+.project-box {
+  width: 50%;
+  height: 95%;
+}
+
+.p-one {
+  height: 56vw;
+}
+.p-two, .p-four {
+  background-color: #292e33;
+}
+
+.p-three, .p-five {
+  background-color: #3eb6d4;
+}
+
+.p-five {
+  height: 100vh;
+}
+
+.p-two, .p-three, .p-four, .p-five {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  height: 5vh;
+  width: 100%;
+}
+
+h2 {
+  color: #fff32c;
+  font-size: 3em;
+}
+
+
+
+
+
+

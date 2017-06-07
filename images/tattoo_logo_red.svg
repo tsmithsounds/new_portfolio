@@ -1,0 +1,16 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.2 570.5">
+  <title>tattoo_logo_red</title>
+  <g id="Circle">
+    <circle id="Circle-2" data-name="Circle" cx="127.6" cy="77.3" r="76.8" fill="none" stroke="#e64c4e" stroke-miterlimit="10"/>
+  </g>
+  <g id="Lines">
+    <line id="Line_2" data-name="Line 2" y1="190.1" x2="255.1" y2="190.1" fill="none" stroke="#e64c4e" stroke-miterlimit="10"/>
+    <g id="Dot">
+      <path d="M339.9,156.8a1.9,1.9,0,0,0,0-3.7,1.9,1.9,0,0,0,0,3.8Z" transform="translate(-212.3 57.3)" fill="#e64c4e"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y1="234.9" x2="255.2" y2="234.9" fill="none" stroke="#e64c4e" stroke-miterlimit="10"/>
+  </g>
+  <g id="Triangle">
+    <polygon id="Long" points="163.8 340 78.9 260.4 127.6 567.3 163.8 340" fill="none" stroke="#e64c4e" stroke-miterlimit="10"/>
+  </g>
+</svg>
