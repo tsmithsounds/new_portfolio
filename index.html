@@ -25,14 +25,14 @@
       </nav>
       
       <!-- Tattoo Logo -->
-      <!--<div class="tattoo">
-        <img src="images/tattoo_logo_red.svg">
-      </div>-->
+      <div>
+        <img id="tattoo" src="images/tattoo_logo_red.svg">
+      </div>
       
       <!-- First Page -->
       <div id="p-one-link" class="page p-one">
-        <!--<img src="images/metolius_cinemagraph.gif">-->
-        <img id="metolius-pic" src="images/metolius_background.png">
+        <!--<img src="images/metolius_cinemagraph.gif">
+        <img id="metolius-pic" src="images/metolius_background.png">-->
         
         <div class="title"> 
           <img id="signature" src="images/Signature_small_black.svg">
@@ -42,8 +42,16 @@
               <li class="attribute"><span>GRAPHIC DESIGNER</span></li>
               <li class="attribute"><span>MUSICIAN</span></li>
               <li class="attribute"><span>OUTDOORSMAN</span></li>
+              <li class="attribute"><span>DOG'S BEST FRIEND</span></li>
             </ul>
           </div>
+        </div>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+          <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner" id="onoff"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
         </div>
       </div>
         
@@ -51,18 +59,23 @@
       <div class="page p-two">
         <header id="p-two-link"></header>
         <div class="content">
-          <h2>WEB</h2>
-          <section>
-            <p>let's build that website you've been thinking about</p>
-          </section>
-          <img src="images/web_icon_4_cropped.png">
-          <section>
-            <h3>I'M FIRED UP ABOUT</h3>
-            <p>html css javascript design ruby development interactivity cms jquery php animation seo user experience design user user interface design</p>
-          </section>
+          <div class="p-top-container">
+            <h2 class="p-title">WEB</h2>
+            <section>
+              <p class="p-tag">let's build that website you've been thinking about</p>
+            </section>
+          </div>
+          <div class="p-bottom-container">
+            <img class="p-icon" src="images/web_icon_4_cropped.png">
+            <section class="p-skills-container">
+              <h3 class="p-skill-title">I'M FIRED UP ABOUT</h3>
+              <p class="p-skills">html <span class="red">css</span> javascript <span class="red">design</span> ruby <span class="red">development</span> interactivity <span class="red">cms</span> jquery <span class="red">php</span> animation <span class="red">seo</span> user experience design <span class="red">user interface design</span></p>
+            </section>
+          </div>
         </div>
         <div class="project-box">
-          
+          <div class="project">
+          </div>  
         </div>
         
       </div>
@@ -71,18 +84,23 @@
       <div class="page p-three">
         <header id="p-three-link"></header>
         <div class="content">
-          <h2>GRAPHIC</h2>
-          <section>
-            <p>i'll lend a hand in making your ideas look great</p>
-          </section>
-          <img src="images/graphics_icon_duotone_3_square.png">
-          <section>
-            <h3>I'M INVOLVED IN</h3>
-            <p>adobe cc photo manipulation ad design logo design photography branding</p>
-          </section>
+          <div class="p-top-container">
+            <h2 class="p-title">GRAPHIC</h2>
+            <section>
+              <p class="p-tag">i'll lend a hand in making your ideas look great</p>
+            </section>
+          </div>
+          <div class="p-bottom-container">
+            <img class="p-icon" src="images/graphics_icon_duotone_3_square.png">
+            <section class="p-skills-container">
+              <h3 class="p-skill-title">I'M INVOLVED IN</h3>
+              <p class="p-skills dark">adobe cc <span class="red2">photo manipulation</span> ad design <span class="red2">logo design</span> photography <span class="red2">branding</span></p>
+            </section>
+          </div>
         </div>
         <div class="project-box">
-          
+          <div class="project">
+          </div> 
         </div>
         
       </div>
@@ -91,18 +109,23 @@
       <div class="page p-four">
         <header id="p-four-link"></header>
         <div class="content">
-          <h2>SOUND</h2>
-          <section>
-            <p>making noise since 1987</p>
-          </section>
-          <img src="images/sounds_duotone_4_cropped.png">
-          <section>
-            <h3>I'M HOOKED ON</h3>
-            <p>guitar composition arrangement transcription bass guitar production music theory</p>
-          </section>
+          <div class="p-top-container">
+            <h2 class="p-title">SOUND</h2>
+            <section>
+              <p class="p-tag">making noise since 1987</p>
+            </section>
+          </div>
+          <div class="p-bottom-container">
+            <img class="p-icon" src="images/sounds_duotone_4_cropped.png">
+            <section class="p-skills-container">
+              <h3 class="p-skill-title">I'M HOOKED ON</h3>
+              <p class="p-skills">guitar <span class="red">composition</span>  arrangement <span class="red">transcription</span> bass guitar <span class="red">production</span> music theory</p>
+            </section>
+          </div>
         </div>
         <div class="project-box">
-          
+          <div class="project">
+          </div> 
         </div>
         
       </div>
@@ -111,17 +134,15 @@
       <div class="page p-five">
         <header id="p-five-link"></header>
         <div class="content">
-          <h2>CONTACT</h2>
-          <section>
-            <h3>I'M EXCITED TO</h3>
-            <p>collaborate with small businesses provide design solutions to enhance brand identities work together to achieve our goals hear about your next project</p>
-          </section>
-          <section>
-            <p>bark at me.</p>
-          </section>
-          <img src="images/Charlie.png">
-          
-          
+          <div class="p-top-container">
+          <h2 class="p-title">CONTACT</h2>
+            <section>
+              <h3 class="contact-skill-title">I'M EXCITED TO</h3>
+              <p class="contact-skills">collaborate with small businesses <span class="red2">provide design solutions to enhance brand identities</span> work together to achieve our goals <br><span class="contact-skill-title">HEAR ABOUT YOUR NEXT PROJECT</span></p>
+            </section>
+          </div>
+          <p class="contact-tag">bark at me.</p>
+          <img class="charlie" src="images/Charlie.png">  
         </div>
         <div class="project-box">
           

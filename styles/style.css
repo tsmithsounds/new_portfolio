@@ -23,6 +23,71 @@ nav {
   z-index: 1; 
 }
 
+
+
+/* On/Off Switch */
+
+.onoffswitch {
+    position: absolute; 
+    bottom: 2%;
+    left: 1%;
+    align-content: 65px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #fffef9; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #3EB6D4; color: #FFFEF9;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #E64C4E; color: #FFFEF9;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 12px; margin: 6px;
+    background: #fffef9;
+    position: absolute; top: 0; bottom: 0;
+    right: 37px;
+    border: 2px solid #fffef9; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+#tattoo {
+  z-index: 1;
+  width: 40vw;
+  position: absolute;
+  top: 34em;
+  right: -16%;
+  
+}
+
 li a{
   display: block;
   list-style-type: none;
@@ -65,7 +130,7 @@ li a:hover {
 #attributes {
   list-style-type: none;
   color: #e64c4e;
-  font-size: 2.2em;
+  font-size: 3vw;
   font-weight: 500;
   letter-spacing: 2px;
   word-spacing: 10px;
@@ -78,22 +143,45 @@ li a:hover {
 }
 
 .content {
-  width: 50%;
+  width: 42%;
   height: 95%;
-}
-
-.content img {
-  width: 100%;
-  display: block;
+  position: relative;
 }
 
 .project-box {
-  width: 50%;
+  width: 58%;
   height: 95%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  z-index: 1;
+  
+}
+
+.project {
+  width: 85%;
+  height: 85%;
+  background: #fffef9;
+  margin-left: 1.2vw;
+  
+}
+
+.pause {
+  background-image: url(../images/metolius_background.png);
+  background-size: cover;
+  position: relative;
 }
 
 .p-one {
-  height: 56vw;
+  background-image: url(../images/metolius_cinemagraph.gif);
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.page {
+  height: 54vw;
 }
 .p-two, .p-four {
   background-color: #292e33;
@@ -113,14 +201,103 @@ li a:hover {
 }
 
 header {
-  height: 5vh;
+  height: 5%;
   width: 100%;
 }
 
-h2 {
+.p-title {
   color: #fff32c;
-  font-size: 3em;
+  font-size: 5vw;
+  line-height: 3.6vw;
+ 
 }
+
+.p-icon {
+  padding-left: 4%;
+  width: 33%;
+}
+
+.p-skills-container {
+  width: 60%;
+  float: right;
+  padding-left: 3%;
+}
+
+.p-bottom-container {
+  position: absolute;
+  bottom: 5%;
+}
+
+.p-top-container {
+  position: absolute;
+  padding-left: 40%;
+  top: 0;
+  right: 0;
+}
+
+.p-skill-title, .p-skills {
+  text-align: right;
+}
+
+.p-tag {
+  font-size: 3vw;
+  font-weight: 200;
+  color: #fffef9;
+  padding-top: 2vh
+
+}
+
+.p-skill-title {
+  color: #fff32c;
+  font-size: 2vw;
+  letter-spacing: 1px;
+}
+
+.p-skills {
+  font-size: 1.6vw;
+  font-weight: 200;
+  color: #fffef9;
+}
+
+.red {
+  color: #E85D5F;
+}
+
+.red2 {
+  color: #332929;
+}
+
+.charlie {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  max-height: 45%;
+}
+
+.contact-skill-title {
+  color: #fff32c;
+  font-size: 2vw;
+  letter-spacing: 1px;
+  padding-top: 1vh;
+  font-weight: 900;
+}
+
+.contact-skills {
+  font-size: 1.6vw;
+  font-weight: 200;
+  color: #fffef9;
+}
+
+.contact-tag {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  font-size: 3vw;
+  font-weight: 200;
+  color: #fffef9;
+}
+
+
 
 
 

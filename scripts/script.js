@@ -17,6 +17,24 @@ $(document).ready(function() {
   }); 
   
   
+// Tattoo Parallax  
   
+  window.onscroll = function() {
+	if (window.pageYOffset > 0) {
+		document.getElementById("tattoo").style.top = (34 +(window.pageYOffset)*.035)+"em";
+		}
+	};
+  
+  
+ /*
+  $('#pause').click(function() {
+    $('#p-one-link').removeClass('p-one');
+    $('#p-one-link').addClass('pause');
+  });
+  */
+  
+$('#myonoffswitch').change(function() {
+  $('#p-one-link').toggleClass('p-one pause');
+});
   
 });
