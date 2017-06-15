@@ -26,15 +26,33 @@ $(document).ready(function() {
 	};
   
   
- /*
-  $('#pause').click(function() {
-    $('#p-one-link').removeClass('p-one');
-    $('#p-one-link').addClass('pause');
-  });
-  */
-  
 $('#myonoffswitch').change(function() {
   $('#p-one-link').toggleClass('p-one pause');
 });
+  
+  
+
+$('.parent').mouseenter(function() {
+  $(this).find('.project-button').addClass('project-button2');
+$('.parent').mouseleave(function() {
+  $(this).find('.project-button').removeClass('project-button2');
+}); 
+});
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 });

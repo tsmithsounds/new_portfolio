@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900" rel="stylesheet">
-    
+    <link rel="stylesheet" href="styles/message-style.css">
   </head>
 
   <body>
@@ -47,12 +47,12 @@
           </div>
         </div>
         <div class="onoffswitch">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-          <label class="onoffswitch-label" for="myonoffswitch">
-              <span class="onoffswitch-inner" id="onoff"></span>
-              <span class="onoffswitch-switch"></span>
-          </label>
-        </div>
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
       </div>
         
       <!-- Second Page -->
@@ -74,7 +74,15 @@
           </div>
         </div>
         <div class="project-box">
-          <div class="project">
+          <div class="project parent">
+            <a href="web.html">
+            <div class="web-project child"></div> 
+            <div class="project-button">
+              <div class="box">
+                <p>SEE PROJECTS</p>
+              </div>
+            </div>
+            </a>
           </div>  
         </div>
         
@@ -99,10 +107,19 @@
           </div>
         </div>
         <div class="project-box">
-          <div class="project">
-          </div> 
+          
+           <div class="project parent">
+           <a href="graphic.html" id="graphic-link">
+            <div class="graphic-project child"></div> 
+            <div class="project-button">
+              <div class="box">
+                <p>SEE PROJECTS</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          
         </div>
-        
       </div>
        
       <!-- Fourth Page -->
@@ -124,7 +141,15 @@
           </div>
         </div>
         <div class="project-box">
-          <div class="project">
+          <div class="project parent">
+            <a href="sound.html">
+            <div class="sound-project child"></div> 
+            <div class="project-button">
+              <div class="box">
+                <p>SEE PROJECTS</p>
+              </div>
+            </div>
+            </a>
           </div> 
         </div>
         
@@ -141,14 +166,34 @@
               <p class="contact-skills">collaborate with small businesses <span class="red2">provide design solutions to enhance brand identities</span> work together to achieve our goals <br><span class="contact-skill-title">HEAR ABOUT YOUR NEXT PROJECT</span></p>
             </section>
           </div>
-          <p class="contact-tag">bark at me.</p>
-          <img class="charlie" src="images/Charlie.png">  
-        </div>
-        <div class="project-box">
           
+        </div>
+        <div class="project-box contact-box">
+          <div id="form-messages"></div>
+          <form id="ajax-contact" action="mailer.php" method="post">
+            <div id="name-container">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="mail">EMAIL</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="msg" class="msg-label">MESSAGE</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="button">
+              <button id="send" type="submit">SEND</button>
+            </div>
+          </form>
+          <p class="contact-tag">bark at me.</p>
+          <img class="charlie" src="images/Charlie_flipped.png">  
         </div>
         
       </div>
+
+      
         
         
     </div>
@@ -158,5 +203,6 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/textition.js"></script>
     <script src="scripts/smooth-scroll.js"></script> 
+    <script src="scripts/app.js"></script>
   </body>
 </html>

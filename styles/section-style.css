@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.full-container {
+  width: 100%;
+  height: auto;
+  background-color: #292e33;
+}
+
+body, html{
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 5vh;
+  background-color: none;
+  float: left; 
+  z-index: 1; 
+}
+
+li a{
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 5px;
+  width: 20px;
+  background-color: #e64c4e;
+  color: #e64c4e;
+  overflow: hidden;
+  text-align: center;
+  line-height: 40px;
+  transition: .6s;
+}
+
+li a:hover {
+  width: 8vw;
+  background-color: #e64c4e;
+  color: #fff32c;
+  transition: .6s;
+}
+
+header {
+  text-align: center;
+  font-size: 8vw;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  background-color: #292e33;
+  color: #fff32c;
+}
+
+
+.project-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+  
+  
+.proj-parent {
+  overflow: hidden;
+  position: relative;
+	cursor: pointer;
+  display: inline-flex;
+  width: 40vw;
+  height: 23vw;
+  margin: 1%;
+}
+
+.proj-child {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .2s;
+}
+
+.proj-parent a {
+  width: 100%;
+  height: 100%;
+}
+
+
+.proj-1 {
+  background-image: url(../images/album_cover_small.jpg);
+  background-position: top;
+}
+
+.proj-2 {
+  background-image: url(../images/album_cover_small.jpg);
+  background-position: top;
+}
+
+.proj-3 {
+  background-image: url(../images/album_cover_small.jpg);
+  background-position: top;
+}
+
+.proj-4 {
+  background-image: url(../images/album_cover_small.jpg);
+  background-position: top;
+}
