@@ -11,29 +11,30 @@
 
   <body>
   
+  <div class="se-pre-con"></div>
+  
     <div class="full-container">
       
       <!-- Navigation -->
       <nav>
         <ul>
-          <li><a href="#p-one-link">HOME</a></li>
-          <li><a href="#p-two-link">WEB</a></li>
-          <li><a href="#p-three-link">GRAPHIC</a></li>
-          <li><a href="#p-four-link">SOUND</a></li>
-          <li><a href="#p-five-link">CONTACT</a></li>
+          <li><a href="#p1-link">HOME</a></li>
+          <li><a href="#p2-link">WEB</a></li>
+          <li><a href="#p3-link">GRAPHIC</a></li>
+          <li><a href="#p4-link">SOUND</a></li>
+          <li><a href="#p5-link">CONTACT</a></li>
         </ul>
       </nav>
       
-      <!-- Tattoo Logo -->
+      <!-- Tattoo Logo 
       <div>
         <img id="tattoo" src="images/tattoo_logo_red.svg">
       </div>
+      -->
+      
       
       <!-- First Page -->
-      <div id="p-one-link" class="page p-one">
-        <!--<img src="images/metolius_cinemagraph.gif">
-        <img id="metolius-pic" src="images/metolius_background.png">-->
-        
+      <div id="p1-link" class="page p-one">
         <div class="title"> 
           <img id="signature" src="images/Signature_small_black.svg">
           <div>  
@@ -56,8 +57,7 @@
       </div>
         
       <!-- Second Page -->
-      <div class="page p-two">
-        <header id="p-two-link"></header>
+      <div class="page p-two" id="p2-link">
         <div class="content">
           <div class="p-top-container">
             <h2 class="p-title">WEB</h2>
@@ -67,13 +67,13 @@
           </div>
           <div class="p-bottom-container">
             <img class="p-icon" src="images/web_icon_4_cropped.png">
-            <section class="p-skills-container">
+            <section id="w-skills-container" class="p-skills-container">
               <h3 class="p-skill-title">I'M FIRED UP ABOUT</h3>
               <p class="p-skills">html <span class="red">css</span> javascript <span class="red">design</span> ruby <span class="red">development</span> interactivity <span class="red">cms</span> jquery <span class="red">php</span> animation <span class="red">seo</span> user experience design <span class="red">user interface design</span></p>
             </section>
           </div>
         </div>
-        <div class="project-box">
+        <div id="w-proj-box" class="project-box">
           <div class="project parent">
             <a href="web.html">
             <div class="web-project child"></div> 
@@ -89,8 +89,7 @@
       </div>
        
       <!-- Third Page -->
-      <div class="page p-three">
-        <header id="p-three-link"></header>
+      <div class="page p-three" id="p3-link">
         <div class="content">
           <div class="p-top-container">
             <h2 class="p-title">GRAPHIC</h2>
@@ -100,13 +99,13 @@
           </div>
           <div class="p-bottom-container">
             <img class="p-icon" src="images/graphics_icon_duotone_3_square.png">
-            <section class="p-skills-container">
+            <section id="g-skills-container" class="p-skills-container">
               <h3 class="p-skill-title">I'M INVOLVED IN</h3>
               <p class="p-skills dark">adobe cc <span class="red2">photo manipulation</span> ad design <span class="red2">logo design</span> photography <span class="red2">branding</span></p>
             </section>
           </div>
         </div>
-        <div class="project-box">
+        <div id="g-proj-box" class="project-box">
           
            <div class="project parent">
            <a href="graphic.html" id="graphic-link">
@@ -123,8 +122,7 @@
       </div>
        
       <!-- Fourth Page -->
-      <div class="page p-four">
-        <header id="p-four-link"></header>
+      <div class="page p-four" id="p4-link">
         <div class="content">
           <div class="p-top-container">
             <h2 class="p-title">SOUND</h2>
@@ -134,13 +132,13 @@
           </div>
           <div class="p-bottom-container">
             <img class="p-icon" src="images/sounds_duotone_4_cropped.png">
-            <section class="p-skills-container">
+            <section id="s-skills-container" class="p-skills-container">
               <h3 class="p-skill-title">I'M HOOKED ON</h3>
               <p class="p-skills">guitar <span class="red">composition</span>  arrangement <span class="red">transcription</span> bass guitar <span class="red">production</span> music theory</p>
             </section>
           </div>
         </div>
-        <div class="project-box">
+        <div id="s-proj-box" class="project-box">
           <div class="project parent">
             <a href="sound.html">
             <div class="sound-project child"></div> 
@@ -156,8 +154,7 @@
       </div>
        
       <!-- Fifth Page -->
-      <div class="page p-five">
-        <header id="p-five-link"></header>
+      <div class="page p-five" id="p5-link">
         <div class="content">
           <div class="p-top-container">
           <h2 class="p-title">CONTACT</h2>
@@ -168,18 +165,19 @@
           </div>
           
         </div>
-        <div class="project-box contact-box">
+        <div class="project-box" id="contact-box">
           <div id="form-messages"></div>
-          <form id="ajax-contact" action="mailer.php" method="post">
-            <div id="name-container">
+          <div class="form-container">
+           <form id="ajax-contact" action="mailer.php" method="post">
+            <div class="name-container">
               <label for="name">NAME</label>
               <input type="text" id="name" name="name" required>
             </div>
-            <div>
+            <div class="email-container">
               <label for="mail">EMAIL</label>
               <input type="email" id="email" name="email" required>
             </div>
-            <div>
+            <div class="msg-container">
               <label for="msg" class="msg-label">MESSAGE</label>
               <textarea id="message" name="message" required></textarea>
             </div>
@@ -187,22 +185,30 @@
               <button id="send" type="submit">SEND</button>
             </div>
           </form>
-          <p class="contact-tag">bark at me.</p>
-          <img class="charlie" src="images/Charlie_flipped.png">  
+          </div>
+            <p class="contact-tag">bark at me.</p>
+            <img class="charlie" src="images/Charlie_flipped.png">   
         </div>
         
       </div>
-
       
-        
+      <footer>
+        <div id="footer-line"></div>
+         <ul>
+           <li><img class="footer-icon" src="images/email_icon_red.svg">hello@tonysmith.design</li>
+            <li><img class="footer-icon" src="images/instagram_logo_red.svg">@tonysmithdesign</li>
+            <li>&copy; 2017, Tony Smith</li>
+         </ul>
+      </footer>
         
     </div>
   
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/textition.js"></script>
-    <script src="scripts/smooth-scroll.js"></script> 
     <script src="scripts/app.js"></script>
+    
   </body>
 </html>

@@ -18,19 +18,19 @@ $(document).ready(function() {
   
   
 // Tattoo Parallax  
-  
+  /*
   window.onscroll = function() {
 	if (window.pageYOffset > 0) {
 		document.getElementById("tattoo").style.top = (34 +(window.pageYOffset)*.035)+"em";
 		}
 	};
-  
-  
+  */
+
 $('#myonoffswitch').change(function() {
-  $('#p-one-link').toggleClass('p-one pause');
+  $('#p1-link').toggleClass('p-one pause');
 });
   
-  
+
 
 $('.parent').mouseenter(function() {
   $(this).find('.project-button').addClass('project-button2');
@@ -40,14 +40,20 @@ $('.parent').mouseleave(function() {
 });
   
   
+$('#initials').mouseenter(function() {
+  $('svg').addClass('initials-red');
+});
+  
+  
 
-  
-  
-  
-  
-  
-  
-  
+  var width = $(window).width();
+  var height = $(window).height();
+  if (width >= 600 && width <=1024 && width > height) {
+    $('#w-skills-container').appendTo('#w-proj-box');
+    $('#g-skills-container').appendTo('#g-proj-box');
+    $('#s-skills-container').appendTo('#s-proj-box');
+  } 
+
   
   
   
