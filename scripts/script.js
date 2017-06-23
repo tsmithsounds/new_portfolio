@@ -6,7 +6,7 @@ $(document).ready(function() {
 // Text rotator
 
   $('#attributes').textition({
-    autoplay: false,
+    autoplay: true,
     animation: 'ease-in-out',
     interval: 3,
     speed: 1.5,
@@ -40,10 +40,6 @@ $('.parent').mouseleave(function() {
 });
   
   
-$('#initials').mouseenter(function() {
-  $('svg').addClass('initials-red');
-});
-  
   
 
   var width = $(window).width();
@@ -54,8 +50,7 @@ $('#initials').mouseenter(function() {
     $('#s-skills-container').appendTo('#s-proj-box');
   } 
 
-  
-  
+
   
   
   

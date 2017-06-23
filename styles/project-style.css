@@ -6,6 +6,30 @@
   padding: 0px;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+  text-align: right;
+}
+
+header h2 {
+  font-size: 6vw;
+  line-height: 6vw;
+  word-spacing: 1vw;
+  color: #fff32c;
+  text-align: right;
+}
+
+header p {
+  font-weight: 200;
+  font-size: 2vw;
+  color: #fffef9;
+  text-align: right;
+}
+
+
 .full-container {
   width: 100%;
   height: 100%;
@@ -15,6 +39,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #292e33;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -22,13 +47,18 @@ body {
   overflow-x: hidden;
 }
 
-nav {
+#initials {
+  width: 6vw;
   position: fixed;
-  top: 5vh;
-  background-color: none;
-  float: left; 
-  z-index: 1; 
+  top: 2vw;
+  left: 2vw;
 }
+
+.home path {
+  stroke: #fff32c;
+  fill: #fff32c;
+}
+
 
 .back-button {
   position: fixed;
@@ -56,7 +86,7 @@ nav {
 
 .forward-button svg, .back-button svg {
   width: 50%;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .button-text {
@@ -75,47 +105,332 @@ nav {
   transition: .2s;
 }
 
-li a{
-  display: block;
-  list-style-type: none;
-  text-decoration: none;
-  margin-top: 5px;
-  width: 20px;
-  background-color: #e64c4e;
-  color: #e64c4e;
-  overflow: hidden;
-  text-align: center;
-  line-height: 40px;
-  transition: .6s;
-}
-
-li a:hover {
-  width: 8vw;
-  background-color: #e64c4e;
-  color: #fff32c;
-  transition: .6s;
-}
-
 .project-container {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-top: 100px;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .hero img {
   width: 100%;
 }
 
-.description {
+.poster-hero {
+  background-image: url(../images/joshua_tree_poster_website.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
-  
+  height: 0;
+  padding-top: 81%;
+  transition: .3s;
+}
+
+.poster-hero1 {
+  background-image: url(../images/joshua_tree_poster_website.jpg);
+  transition: .3s;
+}
+
+.poster-hero2 {
+  background-image: url(../images/mushroom_poster_website.jpg);
+  transition: .3s;
+}
+
+.poster-hero3 {
+  background-image: url(../images/frog_poster_website.jpg);
+  transition: .3s;
 }
 
 
+.photo-hero {
+  background-image: url(../images/joshua_tree_website_75.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 70%;
+  transition: .3s;
+}
+
+.photo-hero1 {
+  background-image: url(../images/joshua_tree_website_75.jpg);
+  transition: .3s;
+}
+
+.photo-hero2 {
+  background-image: url(../images/mushrooms_website.jpg);
+  transition: .3s;
+}
+
+.photo-hero3 {
+  background-image: url(../images/frog_website.jpg);
+  transition: .3s;
+}
+
+
+
+
+
+.icon-hero {
+  background-image: url(../images/joshua_tree_website_75.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 70%;
+  transition: .3s;
+}
+
+.icon-hero1 {
+  background-image: url(../images/joshua_tree_website_75.jpg);
+  transition: .3s;
+}
+
+.icon-hero2 {
+  background-image: url(../images/mushrooms_website.jpg);
+  transition: .3s;
+}
+
+.icon-hero3 {
+  background-image: url(../images/frog_website.jpg);
+  transition: .3s;
+}
+
+
+
+
+.thumb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15vh;
+}
+
+.yw-thumb {
+  width: 19vw;
+  height: 12vw;
+  cursor: pointer;
+}
+
+#yw-thumb-1 {
+  background-image: url(../images/yw_purpose_thumb.jpg);
+  background-size: cover;
+}
+
+#yw-thumb-2 {
+  background-image: url(../images/yw_flyer_thumb.jpg);
+  
+  background-size: cover;
+}
+
+#yw-thumb-3 {
+  background-image: url(../images/yw_t2t_thumb.jpg);
+  background-size: cover;
+}
+
+#yw-thumb-4 {
+  background-image: url(../images/yw_pride_thumb.jpg);
+  background-size: cover;
+  background-position: bottom
+}
+
+.yw-hero {
+  background-image: url(../images/yw_purpose.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 81%;
+  transition: .3s;
+}
+
+.yw-hero1 {
+  background-image: url(../images/yw_purpose.jpg);
+  transition: .3s;
+}
+
+.yw-hero2 {
+  background-image: url(../images/yw_flyer.png);
+  transition: .3s;
+}
+
+.yw-hero3 {
+  background-image: url(../images/yw_t2t.jpg);
+  transition: .3s;
+  
+}
+
+.yw-hero4 {
+  background-image: url(../images/yw_pride.jpg);
+  transition: .3s;
+}
+
+
+.thumb img{
+  width: 30%;
+  height: 30%;
+  cursor: pointer;
+}
+
+.separate {
+  background-color: #fffef9;
+  width: 96vw;
+  height: 2px;
+  border-radius: 1px;
+  margin: 10vh 2vw;
+  margin-bottom: 0;
+}
+
+.separate2 {
+  background-color: #fffef9;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  margin-bottom: 7vw;
+}
+
+footer {
+  background-color: #292e33;
+  width: 100%;
+  height: 100px;
+  color: #fffef9;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+}
+
+
+footer ul {
+  padding-left: 2vw;
+  list-style: none;
+}
+
+.footer-icon {
+  width: 22px;
+  padding-right: 10px;
+}
+
+footer li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12pt;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.tn7-hero {
+  width: 100%;
+  height: 0;
+  background-image: url(../images/album_cover_small.jpg);
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.tn7-thumb {
+  width: 15vw;
+  height: 10vw;
+  cursor: pointer;
+  margin-top: 1vw;
+}
+
+#tn7-thumb-1 {
+  background-image: url(../images/tn7_cover_thumb.jpg);
+  background-size: cover;
+}
+
+#tn7-thumb-2 {
+  background-image: url(../images/tn7_front_thumb.jpg);
+  background-size: cover;
+}
+
+#tn7-thumb-3 {
+  background-image: url(../images/tn7_back_thumb.jpg);
+  background-size: cover;
+}
+
+#tn7-thumb-4 {
+  background-image: url(../images/tn7_group_thumb.jpg);
+  background-size: cover;
+}
+
+#tn7-thumb-5 {
+  background-image: url(../images/tn7_insert_thumb.png);
+  background-size: cover;
+}
+
+.tn7-hero1 {
+  background-image: url(../images/album_cover_small.jpg);
+}
+
+.tn7-hero2 {
+  background-image: url(../images/tn7_front.jpg);
+  width: 100%;
+  padding-top: 54vw;
+}
+
+.tn7-hero3 {
+  background-image: url(../images/tn7_back.jpg);
+  padding-top: 54vw;
+}
+
+.tn7-hero4 {
+  background-image: url(../images/tn7_group.jpg);
+  padding-top: 54vw;
+}
+
+.tn7-hero5 {
+  background-image: url(../images/tn7_insert.png);
+  padding-top: 54vw;
+}
+
+
+
+
+
+iframe {
+  min-width: 250px;
+  margin-right: 2%;
+}
+
+.credits {
+  width: 49%;
+  min-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 280px;
+}
+
+.credits h2 {
+  color: #fff32c;
+  font-size: 45pt;
+}
+
+.credits ul {
+  color: #fffef9;
+  font-size: 15.4pt;
+  font-weight: 200;
+  list-style: none;
+}
+
+.red {
+  color: #e64c4e;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fffef9;
+}
+
+footer a:hover {
+  color: #fff32c;
+}
 
 

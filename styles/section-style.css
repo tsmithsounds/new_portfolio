@@ -15,117 +15,97 @@
 body, html{
   font-family: "Montserrat", sans-serif;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
 }
 
-svg {
-  width: 6vw;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-.initials-red {
-  fill: #e64c4e;
-  stroke: #e64c4e
-}
-
-
-/*
 #initials {
-  background-image: url(../images/initials_red.svg);
-  background-size:contain;
-  background-repeat: no-repeat;
-  height: 90px;
-  width: 90px;
-  position: absolute;
-  top: 2vw;
-  left: 2vw;
-
-}
-
-#initials:hover {
-  background-image:url(../images/initials_yellow.svg); 
-  background-size:contain;
-  background-repeat: no-repeat;
-  height: 90px;
-  width: 90px;
-  position: absolute;
-  top: 2vw;
-  left: 2vw;
-  
-}*/
-
-nav {
+  width: 6vw;
   position: fixed;
-  top: 5vh;
-  background-color: none;
-  float: left; 
-  z-index: 1; 
+  top: 2vw;
+  left: 2vw;
 }
 
-#tattoo {
-
-  width: 10vw;
-  position: absolute;
-  top: 20px;
-  
-
+.home path {
+  stroke: #fff32c;
+  fill: #fff32c;
 }
 
-li a{
-  display: block;
-  list-style-type: none;
-  text-decoration: none;
-  margin-top: 5px;
-  width: 20px;
-  background-color: #e64c4e;
-  color: #e64c4e;
-  overflow: hidden;
-  text-align: center;
-  line-height: 40px;
-  transition: .6s;
-}
-
-li a:hover {
-  width: 8vw;
-  background-color: #e64c4e;
-  color: #fff32c;
-  transition: .6s;
+.projects-header {
+  position: fixed;
+  top: 1vw;
+  left: 100vw;
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
 }
 
 header {
-  text-align: center;
-  font-size: 8vw;
-  padding-top: 5vh;
-  background-color: #292e33;
-  color: #fff32c;
-  z-index: 2;
+  width: 100%;
 }
 
+header h1 {
+  color: #fffef9;
+  font-size: 9vw;
+  line-height: 10vw;
+  text-align: left;
+}
+
+header h2 {
+  color: #fff32c;
+  text-align: right;
+  font-size: 6vw;
+}
 
 .project-container {
-  width: 100%;
+  width: 80vw;
+  max-width: 1200px;
   height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
 }
+
+.w-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.g-container, .s-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
   
-  
-.proj-parent {
+.w-project, .s-project {
+  width: 100%;
+  height: 45vw;
   overflow: hidden;
   position: relative;
 	cursor: pointer;
   display: inline-flex;
-  width: 40vw;
-  height: 23vw;
-  margin: 1%;
+  margin-top: 2vw;
+}
+
+.g-project {
+  overflow: hidden;
+  position: relative;
+	cursor: pointer;
+  display: inline-flex;
+  width: 39vw;
+  max-width: 590px;
+  height: 22vw;
+  margin-top: 2vw;
 }
 
 .proj-child {
@@ -142,34 +122,82 @@ header {
   height: 100%;
 }
 
+.proj-parent:hover .proj-child {
+  transform: scale(1.05);
+  -webkit-filter: brightness(90%) grayscale(50%);
+  transition: .2s;
+}
 
-.proj-1 {
+.proj-button {
+  background-color: #292e33;
+  position: absolute;
+  height: 40px;
+  line-height: 40px;
+  opacity: .9;
+  color: #fffef9;
+  transition: .2s;
+  border-radius: 1px;
+}
+
+.g-project-button {
+  bottom: 15%;
+  right: 0;
+  width: 65%;
+}
+
+.w-project-button, .s-project-button {
+  bottom: 15%;
+  right: 0;
+  width: 32.5%;
+}
+
+.proj-button2 {
+  background-color: #fff32c;
+  color: #292e33;
+  transition: .2s;
+  opacity: 1;
+}
+
+.proj-button p {
+  padding-left: 10%;
+  font-weight: 200; 
+}
+
+.w-proj-1 {
+  background-image: url(../images/album_cover_small.jpg);
+}
+.g-proj-1 {
   background-image: url(../images/album_cover_small.jpg);
   background-position: top;
 }
 
-.proj-2 {
-  background-image: url(../images/album_cover_small.jpg);
+.g-proj-2 {
+  background-image: url(../images/mushrooms_website.jpg);
+  background-position: bottom;
+}
+
+.g-proj-3 {
+  background-image: url(../images/klipsch_thumb.jpg);
+  background-position: top right;
+}
+
+.g-proj-4 {
+  background-image: url(../images/yw_purpose_thumb.jpg);
   background-position: top;
 }
 
-.proj-3 {
+.s-proj-1 {
   background-image: url(../images/album_cover_small.jpg);
   background-position: top;
 }
-
-.proj-4 {
-  background-image: url(../images/album_cover_small.jpg);
-  background-position: top;
-}
-
 
 .separate {
   background-color: #fffef9;
-  width: 96vw;
+  width: 88vw;
   height: 2px;
   border-radius: 1px;
-  margin: 10vh 2vw;
+  margin-top: 10vh;
+  margin-left: 2vw;
   margin-bottom: 0;
 }
 
@@ -205,7 +233,14 @@ footer li {
   line-height: 30px;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fffef9;
+}
 
+footer a:hover {
+  color: #fff32c;
+}
 
 
 

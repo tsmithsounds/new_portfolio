@@ -5,7 +5,6 @@
  * Dima Karpov (c) 2013
  * * * * * * * * * * * * * * * * * * * * * * */
 
-
 (function($) {
 	$.fn.textition = function(options) {
 		
@@ -69,10 +68,11 @@
 		// random distance
 		var val = function(val) {			
 			return Math.round(Math.random() * val) - val / 2;
-		}
+		}		
+    
     var yval = function(val) {
       return Math.round(Math.random() * val) - val / -2;
-    }
+    };
 		
 		
 		
@@ -265,4 +265,3 @@
 
 	}
 })(jQuery)
-

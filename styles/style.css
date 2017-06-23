@@ -75,8 +75,8 @@ li a:hover {
 
 .onoffswitch {
     position: absolute; 
-    bottom: 2%; 
-    left: 1%; 
+    bottom: 2vw; 
+    left: 2vw; 
     width: 60px;
     -webkit-user-select:none; 
     -moz-user-select:none; 
@@ -309,7 +309,7 @@ li a:hover {
 /* Page One */
 
 .p-one {
-  background-image: url(../images/metolius_background.png);/*url(../images/metolius_cinemagraph.gif);*/
+  background-image: /*url(../images/metolius_background.png);*/url(../images/metolius_cinemagraph.gif);
   background-size: cover;
   position: relative;
 }
@@ -509,7 +509,7 @@ footer {
 
 #footer-line {
   background: #fffef9;
-  margin-left: 30px;
+  margin-left: 2vw;
   width: 2px;
   border-radius: 1px;
   height: 80px;
@@ -626,7 +626,8 @@ footer li {
     height: auto;
     top: 0;
     padding-top: 7vh;
-    padding-left: 8vw;
+    padding-left: 5vw;
+    
   }
 
   .p-title {    
@@ -655,7 +656,7 @@ footer li {
   }
 
   .p-icon {
-    padding-left: 8vw;
+    padding-left: 5vw;
     width: 30%;
   }
 
@@ -772,11 +773,12 @@ footer li {
   }
     
   .contact-skills {
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 200;
     color: #fffef9;
     text-align: left;
     padding-left: 0; 
+    padding-right: 5vw;
   } 
   
    .p-five .content {
@@ -797,7 +799,7 @@ footer li {
       width: 100%;
       height: 60%;
       align-self: flex-start;
-      padding-top: 3vh;
+      padding-top: 5vh;
     }
     
     form {
@@ -805,18 +807,31 @@ footer li {
       height: 100%;
       margin-left: 5%;
       position: inherit;
+      
     }
+  
+  label {
+    font-size: 2.3vw;
+  }
+  
+  #send {
+    font-size: 4vw;
+  }
     
     .contact-tag {
       margin: 0;
       padding: 0;
-      font-size: 5vw;
+      font-size: 6vw;
       align-self: flex-start;
     }
 
     .charlie {
       width: 50%;
     }
+  
+  #footer-line {
+    margin-left: 5vw;
+  }
   
 }
   
@@ -1203,6 +1218,14 @@ footer li {
       position: inherit;
     }
     
+    label {
+      font-size: 2.3vw;
+    }
+    
+    #send {
+      font-size: 3vw
+    }
+    
     .contact-tag {
       margin: 0;
       padding: 0;
@@ -1212,6 +1235,10 @@ footer li {
 
     .charlie {
       width: 60%;
+    }
+    
+    #footer-line {
+      margin-left: 5vw;
     }
 } 
 
