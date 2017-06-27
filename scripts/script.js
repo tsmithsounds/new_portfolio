@@ -8,7 +8,7 @@ $(document).ready(function() {
   $('#attributes').textition({
     autoplay: true,
     animation: 'ease-in-out',
-    interval: 3,
+    interval: 2.5,
     speed: 1.5,
     map: {
     x: 70,
@@ -28,6 +28,7 @@ $(document).ready(function() {
 
 $('#myonoffswitch').change(function() {
   $('#p1-link').toggleClass('p-one pause');
+  
 });
   
 

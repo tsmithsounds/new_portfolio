@@ -164,7 +164,8 @@ header h2 {
 }
 
 .w-proj-1 {
-  background-image: url(../images/album_cover_small.jpg);
+  background-image: url(../images/laptop_mockup_website.jpg);
+  background-position: 0% 60%;
 }
 .g-proj-1 {
   background-image: url(../images/album_cover_small.jpg);

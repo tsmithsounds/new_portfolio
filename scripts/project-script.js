@@ -26,6 +26,26 @@ $(document).ready(function() {
   
   // Photo Switch
   
+  
+  // Web
+  
+   $('#website-thumb1').click(function() {
+    $('.website-hero').removeClass('website-hero2 website-hero3');
+    $('.website-hero').addClass('website-hero1');
+  });
+  
+  $('#website-thumb2').click(function() {
+    $('.website-hero').removeClass('website-hero1 website-hero3');
+    $('.website-hero').addClass('website-hero2');
+  });
+  
+   $('#website-thumb3').click(function() {
+    $('.website-hero').removeClass('website-hero1 website-hero2');
+    $('.website-hero').addClass('website-hero3');
+  });
+  
+ 
+  
   // Poster
   
   $('#j-poster-thumb').click(function() {

@@ -75,7 +75,7 @@ li a:hover {
 
 .onoffswitch {
     position: absolute; 
-    bottom: 2vw; 
+    top: 50vw; 
     left: 2vw; 
     width: 60px;
     -webkit-user-select:none; 
@@ -291,7 +291,9 @@ li a:hover {
 }
 
 .web-project {
-  background-image: url(../images/Mushrooms_3.png);
+  background-image: url(../images/laptop_mockup_website.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .graphic-project {
@@ -308,13 +310,20 @@ li a:hover {
 
 /* Page One */
 
+#cine-video {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 .p-one {
-  background-image: /*url(../images/metolius_background.png);*/url(../images/metolius_cinemagraph.gif);
+  /*background-image:  url(../images/metolius_background.png);/*url(../images/metolius_cinemagraph.gif);
   background-size: cover;
-  position: relative;
+  position: relative;*/
 }
 
 .title {
+  display: block;
   box-sizing: border-box;
   width: 50vw;
   height: auto;
@@ -322,6 +331,16 @@ li a:hover {
   margin-top: 10vh;
   padding-right: 10vw;
 }
+
+#site-title a{
+  display: block;
+  height: 17.5vw;
+  background: transparent url(../images/Signature_small_black.svg) no-repeat;
+  background-size: 100% auto;
+  text-indent: -999em;
+}
+
+
 
 #attributes {
   list-style-type: none;
@@ -380,7 +399,7 @@ li a:hover {
 /* Contact Form */
 
 #contact-box {
-  width: 56vw;
+  width: 56%;
   height: 100%;
   display: flex;
   position: relative;
@@ -577,19 +596,35 @@ footer li {
     height: 100vh;
   }
   
+  #cine-video {
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+  
+  .onoffswitch {
+    top: 95vh;
+  }
+  
+  /*
   .p-one {
-    background-image: url(../images/metolius_background.png);/*url(../images/metolius_cinemagraph.gif)*/;
+    background-image: url(../images/metolius_background.png);/*url(../images/metolius_cinemagraph.gif);
     background-size: cover;
     background-repeat: no-repeat;
   }
-
+*/
   .title {
     box-sizing: border-box;
-    width: 80%;
+    width: 80vw;
     height: auto;
     float: right;
     margin-top: 10vh;
     padding-right: 8vw;
+  }
+  
+  #site-title a{
+    height: 31vw;
   }
 
   #attributes {
@@ -751,9 +786,10 @@ footer li {
     transition: .2s;
   }
 
-  .web-project {
-    background-image: url(../images/Mushrooms_3.png);
-  }
+ .web-project {
+  background-image: url(../images/laptop_mockup_website.jpg);
+  background-position: center;
+}
 
   .graphic-project {
     background-image: url(../images/klipsch_thumb.jpg);
@@ -845,13 +881,27 @@ footer li {
       width: 70vw;
     }
     
+    #site-title a{
+      height: 25.5vw;
+    }
+    
     #attributes {
       font-size: 4.3vw;
     }
     
     .page {
       height: 100vh;
+      overflow-x: hidden;
     }
+    
+    #cine-video {
+      height: 100vh;
+      width: auto;
+      position: absolute;
+      z-index: -1;
+    }
+    
+    
     
     nav li a{
       display: block;
@@ -873,6 +923,10 @@ footer li {
       background-color: #e64c4e;
       color: #fff32c;
     }
+    
+     .onoffswitch {
+    top: 93vh;
+  }
     
     .p-tag {
      font-size: 3.3vw; 
@@ -983,10 +1037,13 @@ footer li {
     height: 100vh;
   }
   
-
+    #site-title a{
+      height: 31vw;
+    }
+    
   .title {
     box-sizing: border-box;
-    width: 80%;
+    width: 80vw;
     height: auto;
     float: right;
     margin-top: 10vh;
@@ -1162,8 +1219,9 @@ footer li {
   }
 
   .web-project {
-    background-image: url(../images/Mushrooms_3.png);
-  }
+  background-image: url(../images/laptop_mockup_website.jpg);
+  background-position: center;
+}
 
   .graphic-project {
     background-image: url(../images/klipsch_thumb.jpg);
