@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height">
     <title>Tony Smith Design</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900" rel="stylesheet">
     <link rel="stylesheet" href="styles/message-style.css">
+    
   </head>
 
   <body>
@@ -34,7 +36,6 @@
           <h6 id="site-title">
             <a href=""><span>Tony Smith</span></a>  
           </h6>
-         <!--<a href="/"><span>Tony Smith</span><img id="signature"  src="images/Signature_small_black.svg"></a>-->
           <div>  
             <ul id="attributes">
               <li class="attribute">WEB DEVELOPER</li>
@@ -45,13 +46,13 @@
             </ul>
           </div>
         </div>
-        <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-    <label class="onoffswitch-label" for="myonoffswitch">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-</div>
+        <div class="onoffswitch" id="video-switch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+          <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
       </div>
         
       <!-- Second Page -->
@@ -164,9 +165,8 @@
           
         </div>
         <div class="project-box" id="contact-box">
-          <div id="form-messages"></div>
           <div class="form-container">
-           <form id="ajax-contact" action="mailer.php" method="post">
+           <form id="my_form" onsubmit="submitForm(); return false;">
             <div class="name-container">
               <label for="name">NAME</label>
               <input type="text" id="name" name="name" required>
@@ -184,7 +184,13 @@
             </div>
           </form>
           </div>
-            <p class="contact-tag">bark at me.</p>
+            <div id="form-messages" class="modal">
+             <div class="modal-content">
+                <span id="close">&times;</span>
+                <p id="modal-text">Thanks for the message, we'll be in touch.</p>
+              </div>
+            </div>
+            <p id="bark" class="contact-tag">bark at me.</p>
             <img class="charlie" src="images/Charlie_flipped.png">   
         </div>
         
@@ -207,6 +213,9 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/textition.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/form.js"></script>
+     
+  
     
   </body>
 </html>

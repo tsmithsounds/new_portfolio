@@ -1,8 +1,6 @@
 $(document).ready(function() {
-
   
-  window.onresize = function(){ location.reload(); }
-  
+    
 // Text rotator
 
   $('#attributes').textition({
@@ -15,16 +13,7 @@ $(document).ready(function() {
     y: 50,
     } 
   }); 
-  
-  
-// Tattoo Parallax  
-  /*
-  window.onscroll = function() {
-	if (window.pageYOffset > 0) {
-		document.getElementById("tattoo").style.top = (34 +(window.pageYOffset)*.035)+"em";
-		}
-	};
-  */
+
 
 $('#myonoffswitch').change(function() {
   $('#p1-link').toggleClass('p-one pause');
@@ -51,10 +40,39 @@ $('.parent').mouseleave(function() {
     $('#s-skills-container').appendTo('#s-proj-box');
   } 
 
-
   
+  if (width <= 599 || height <=599) {
+    $('#cine-video').remove();  
+    $('#video-switch').remove();
+  }
   
+  /*
   
+  var modal = document.getElementById('form-messages');
+  var btn = document.getElementById('send');
+  var span = document.getElementById('close') [0];
+  btn.onclick = function () {
+    alert('send');
+    modal.style.display = "block";
+  };
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
   
+  */
   
 });
+
+
+
+
+
+
+
+
+

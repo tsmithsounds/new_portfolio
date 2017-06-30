@@ -12,8 +12,9 @@ body, html{
   height: auto;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
+
+
 
 .page {
   width: 100%;
@@ -316,11 +317,7 @@ li a:hover {
   z-index: -1;
 }
 
-.p-one {
-  /*background-image:  url(../images/metolius_background.png);/*url(../images/metolius_cinemagraph.gif);
-  background-size: cover;
-  position: relative;*/
-}
+
 
 .title {
   display: block;
@@ -380,6 +377,60 @@ li a:hover {
   color: #fffef9;
   text-align: left;
   align-self: flex-end;
+}
+
+/*
+#form-messages {
+  width: 90%;
+  color: #fff32c;
+  font-weight: 200;
+  font-size: 1.6vw;
+  align-self: flex-end;
+  margin-top: 30vw;
+}*/
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41,46,51,.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fffef9;
+  margin: 15% auto;
+  padding: 40px;
+  box-shadow: 4px 4px 20px #292e33;
+  width: 50%;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 1%;
+  line-height: 3vw;
+  color: #e64c4e;
+  float: right;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+#close:hover, #close:focus {
+  color: #e64c4e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p {
+  color: #292e33;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .content section {
@@ -490,6 +541,7 @@ textarea {
   box-sizing: border-box; 
   padding-right: 5%;
   margin-bottom: 3%;
+
 }
 
 #send {
@@ -502,7 +554,7 @@ textarea {
   transition: .1s;
   border-radius: 1px;
   letter-spacing: 1px;
-  
+  cursor: pointer;
 }
 
 #send:hover {
@@ -559,7 +611,7 @@ footer li {
 /* Phones */
 
 @media (max-width: 599px) {
-
+  
   nav {
     position: fixed;
     width: 100%;
@@ -596,24 +648,12 @@ footer li {
     height: 100vh;
   }
   
-  #cine-video {
-  width: auto;
-  height: 100vh;
-  position: absolute;
-  z-index: -1;
-}
-  
-  .onoffswitch {
-    top: 95vh;
-  }
-  
-  /*
   .p-one {
-    background-image: url(../images/metolius_background.png);/*url(../images/metolius_cinemagraph.gif);
+    background-image: url(../images/metolius_phone_cropped.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
-*/
+
   .title {
     box-sizing: border-box;
     width: 80vw;
@@ -870,7 +910,22 @@ footer li {
   }
   
 }
+
+
+/* Phone Portrait */
+
+  @media (max-height: 599px) {
   
+    .p-one {
+      background-image: url(../images/metolius_background.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+    
+}
+  
+
+
 
 /* Tablet */
 
@@ -891,8 +946,9 @@ footer li {
     
     .page {
       height: 100vh;
-      overflow-x: hidden;
     }
+    
+   
     
     #cine-video {
       height: 100vh;
@@ -1009,6 +1065,7 @@ footer li {
     z-index: 1; 
   }
   
+ 
 
   nav ul {
     display: flex;
