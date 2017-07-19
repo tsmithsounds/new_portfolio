@@ -1,5 +1,7 @@
 $(document).ready(function() {
   
+
+  
     
 // Text rotator
 
@@ -9,17 +11,24 @@ $(document).ready(function() {
     interval: 2.5,
     speed: 1.5,
     map: {
-    x: 70,
+    x: 30,
     y: 50,
     } 
   }); 
 
 
-$('#myonoffswitch').change(function() {
-  $('#p1-link').toggleClass('p-one pause');
+
   
+var cine = document.getElementById('cine-video');  
+  
+  $('#myonoffswitch').change(function() {
+    if (cine.paused === false) {
+      cine.pause();
+    } else {
+      cine.play();
+    }
 });
-  
+    
 
 
 $('.parent').mouseenter(function() {
@@ -44,27 +53,32 @@ $('.parent').mouseleave(function() {
   if (width <= 599 || height <=599) {
     $('#cine-video').remove();  
     $('#video-switch').remove();
+    
   }
   
-  /*
+
+  if (width <= 599) {
+    $(window).resize(function() {
+      var newHeight = $(window).height();
+      if ((height / newHeight) > 1.3) {
+        var heightRatio = (height / newHeight)* 100;
+        var navHeight = (4 * (heightRatio/100));
+        $('.page').css('height', heightRatio + "vh");
+        $('nav ul li a').css('height', navHeight + "vh");
+        $('nav ul li a').css('line-height', navHeight + "vh");
+        $('html, body').animate({
+          scrollTop: $("#my_form").offset().top
+        });
+      }
+      if ((height / newHeight) === 1) {
+        $('.page').css('height', '100vh');
+        $('nav ul li a').css('height', '4vh');
+        $('nav ul li a').css('line-height', '4vh');
+      }
+    });
+  }
   
-  var modal = document.getElementById('form-messages');
-  var btn = document.getElementById('send');
-  var span = document.getElementById('close') [0];
-  btn.onclick = function () {
-    alert('send');
-    modal.style.display = "block";
-  };
-  span.onclick = function () {
-    modal.style.display = "none";
-  };
-  window.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
   
-  */
   
 });
 

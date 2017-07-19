@@ -2,10 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-      <title>Personal Branding</title>
+      <title>Personal Brand - Graphic Design</title>
+      <meta name="description" content="View my personal branding process to see how graphic design can help your business.">
       <link rel="stylesheet" type="text/css" href="styles/project-style.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900" rel="stylesheet">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-102178274-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
   </head>
 
 <body>
@@ -29,9 +40,9 @@
       </a>
       
       <!-- Buttons -->
-      <div class="button back-button">
+      <div id="back" class="button back-button">
         <p class="button-text">PROJECTS</p>
-        <a href="projects.html">
+        <a href="personal-website.html">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796 796">
             <title>back_button</title>
             <g id="back_2" data-name="Layer 2">
@@ -45,7 +56,7 @@
           </svg>
         </a>
       </div>
-      <div class="button forward-button">
+      <div id="next" class="button forward-button">
         <p class="button-text">NEXT</p>
         <a href="outdoor-concept.html">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796 796">
@@ -64,18 +75,49 @@
      <div class="project-container">
         
         <header>
-          <h2>PERSONAL BRANDING</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem tellus, maximus ac commodo nec, tristique nec est. Maecenas scelerisque elementum pulvinar. In egestas tincidunt ornare. </p>
+          <h1>GRAPHIC DESIGN</h1>
+          <h2>PERSONAL BRAND</h2>
+          <p class="page-description">Here's look into the process of developing my personal brand. From research to print &amp; digital graphic design, it's just part of what you can expect out of working together to develop your brand's visual identity.</p>
         </header>
         <div class="separate2"></div>
       
       
-        <div class="hero">
-          <img src="images/klipsch_full.png">
+        <div class="hero brand-hero"></div>
+        
+        <div class="caption">
+          <p id="caption1">I focused on a duotone style for my brand's imagery to portray a bold, contemporary identity that brings a new energy to familiar scenes and objects.</p>
         </div>
+        
+        <div class="thumb">
+          <img class="brand-thumb" id="brand-thumb1" src="images/icons_2_thumb.jpg">
+          <img class="brand-thumb" id="brand-thumb2" src="images/business_cards_thumb.jpg">
+          <img class="brand-thumb" id="brand-thumb3" src="images/style_guide_2_thumb.jpg">
+        </div>
+        
+        <section class="approach-container">
+          <p class="approach">Developing a personal brand is a very rewarding process. We don't often ask questions about ourselves with the expectation of finding new information. After all you already know yourself pretty well, right? But through that process we'll find a few core concepts that are strong enough to build a brand around. With this information comes consistency and confidence which makes the design process more purposeful and in the end, a lot more fun.</p>
+          <br>
+          <p class="approach">This is exactly how I’ll approach clarifying your brand's visual identity though designing your digital &amp; print materials. Together we’ll explore your business’ goals and translate them into effective brand collateral. 
+          </p>
+        </section>
+        <section id="my-process">
+          <div class="step-container">
+            
+            <div class="step"><h3>RESEARCH</h3>
+            <p>We'll take a good look at your goals, assess other businesses in your field, and specify your target audience.</p></div>
+            <div class="step"><h3>BRAND STATEMENT</h3>
+            <p>With the right information we can further identify why your customer will come to you over the competition and how we can tell that story through your design.</p></div>
+            <div class="step"><h3>STYLE</h3>
+            <p>We'll gather sources of inspiration to define how your visual style will look and why, then establish consistent typography, colors, and visuals to tell your story.</p></div>
+            <div class="step"><h3>PRINT &amp; DIGITAL COLLATERAL</h3>
+            <p>Whether it's a business card, logo, digital or print advertisement, or product label, I'll apply these style guidelines when producing graphic design materials that solve your problems.</p></div>
+          </div>
+          <h2 class="contact-link"><a href="index.html#p5-link">let's get to work.</a></h2>
+        </section>
       </div>
-      
   </div>
+      
+
 
   <div class="separate"></div>
   
@@ -91,7 +133,7 @@
 
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/project-script.js"></script>
 </body>

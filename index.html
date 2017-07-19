@@ -2,14 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Tony Smith works with you to develop design solutions for your brand. Your business is unique, stand out from the crowd. Located in Bend, Oregon.">
+    <title>Tony Smith | Web Developer | Graphic Designer | Musician</title>
     <meta name="viewport" content="width=device-width, height=device-height">
-    <title>Tony Smith Design</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900" rel="stylesheet">
     <link rel="stylesheet" href="styles/message-style.css">
-    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-102178274-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body>
@@ -31,11 +40,11 @@
       
       <!-- First Page -->
       <div id="p1-link" class="page p-one">
-        <video id="cine-video" autoplay loop src="images/metolius_cinemagraph.mp4"></video>
+        <div id="video-wrapper"><video id="cine-video" autoplay loop src="images/metolius_cinemagraph.mp4"></video></div>
         <div class="title"> 
-          <h6 id="site-title">
-            <a href=""><span>Tony Smith</span></a>  
-          </h6>
+          <h1 id="site-title">
+            <a href=""><span>Tony Smith Web Design Graphic Design</span></a>  
+          </h1>
           <div>  
             <ul id="attributes">
               <li class="attribute">WEB DEVELOPER</li>
@@ -168,16 +177,16 @@
           <div class="form-container">
            <form id="my_form" onsubmit="submitForm(); return false;">
             <div class="name-container">
-              <label for="name">NAME</label>
-              <input type="text" id="name" name="name" required>
+              <label id="n-focus" for="name">NAME</label>
+              <input onclick="this.select()" type="text" id="name" name="name" class="field" required>
             </div>
             <div class="email-container">
-              <label for="mail">EMAIL</label>
-              <input type="email" id="email" name="email" required>
+              <label id="e-focus" for="mail">EMAIL</label>
+              <input onclick="this.select()" type="email" id="email" name="email" class="field" required>
             </div>
             <div class="msg-container">
-              <label for="msg" class="msg-label">MESSAGE</label>
-              <textarea id="message" name="message" required></textarea>
+              <label id="m-focus" for="msg" class="msg-label">MESSAGE</label>
+              <textarea onclick="this.select()" id="message" name="message" class="field" required></textarea>
             </div>
             <div class="button">
               <button id="send" type="submit">SEND</button>
@@ -190,8 +199,8 @@
                 <p id="modal-text">Thanks for the message, we'll be in touch.</p>
               </div>
             </div>
-            <p id="bark" class="contact-tag">bark at me.</p>
-            <img class="charlie" src="images/Charlie_flipped.png">   
+          <p id="bark" class="contact-tag">bark at me.</p>
+          <img class="charlie" src="images/Charlie_flipped.png">   
         </div>
         
       </div>

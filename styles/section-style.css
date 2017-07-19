@@ -39,6 +39,10 @@ body, html{
   left: 100vw;
   transform: rotate(90deg);
   transform-origin: 0% 0%;
+  color: #fffef9;
+  font-size: 9vw;
+  line-height: 10vw;
+  text-align: left;
 }
 
 header {
@@ -46,10 +50,7 @@ header {
 }
 
 header h1 {
-  color: #fffef9;
-  font-size: 9vw;
-  line-height: 10vw;
-  text-align: left;
+  
 }
 
 header h2 {
@@ -168,7 +169,7 @@ header h2 {
   background-position: 0% 60%;
 }
 .g-proj-1 {
-  background-image: url(../images/album_cover_small.jpg);
+  background-image: url(../images/icons_2.jpg);
   background-position: top;
 }
 

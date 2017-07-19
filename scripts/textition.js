@@ -8,15 +8,17 @@
 (function($) {
 	$.fn.textition = function(options) {
 		
-    
-      var a = $(window).width(); 
-      window.onresize = function() {
+    var a = $(window).width();
+    $(window).on('resize', function() {
         var b = $(window).width();
         if (a !== b) {
-          location.reload();
+          this.location.href = this.location.href;
         }
-      };
+      });
     
+    
+    
+
 		
 		// ----------------
 		// VARS

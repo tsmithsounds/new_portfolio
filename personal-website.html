@@ -2,10 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
-      <title>Personal Website</title>
+      <title>Personal Website - Web Design</title>
+      <meta name="description" content="View my web design process to see how we'll work together to build a website for your business.">
       <link rel="stylesheet" type="text/css" href="styles/project-style.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900" rel="stylesheet">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-102178274-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
   </head>
 
 <body>
@@ -29,7 +40,7 @@
       </a>
       
       <!-- Buttons -->
-      <div class="button back-button">
+      <div id="back" class="button back-button">
         <p class="button-text">PROJECTS</p>
         <a href="projects.html">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796 796">
@@ -45,7 +56,7 @@
           </svg>
         </a>
       </div>
-      <div class="button forward-button">
+      <div id="next" class="button forward-button">
         <p class="button-text">NEXT PROJECT</p>
         <a href="personal-brand.html">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796 796">
@@ -63,19 +74,50 @@
       
       <div class="project-container">
         <header>
+          <h1>WEB DESIGN</h1>
           <h2>PERSONAL WEBSITE</h2>
-          <p>A simple, attractive, and consistent set of promotional materials for an outdoor retailer designed to aid in a coherent digital and print marketing campaign.</p>
+          <p class="page-description">Welcome to the tonysmith.design process. Here you'll get an idea of how I'll work with you to design and develop your website.</p>
         </header>
         <div class="separate2"></div>
         
         <div class="hero website-hero"></div>
         
+        <div class="caption">
+          <p id="web-caption">My website is responsive - it was designed to adapt to multiple devices and screen sizes. Of course I'll make sure to do the same for yours, no need to ask.</p>
+        </div>
+        
         <div class="thumb">
           <img id="website-thumb1" src="images/laptop_mockup_website_thumb.jpg">
           <img id="website-thumb2" src="images/desktop_mockup_website_thumb.jpg">
           <img id="website-thumb3" src="images/tablet_mockup_website_thumb.jpg">
+          <img id="website-thumb4" src="images/wireframes_thumb.jpg">
         </div>
         
+        <section class="approach-container">
+          <p class="approach">The primary goal for my website was to create a space to show my work that represented my personal identity as a web developer, graphic designer, and musician. My love for the outdoors, family, my best bud Charlie &#40; yup, that's the handsome devil at the bottom of my home page &#41;, and the lifestyle I choose to lead as an entrepreneur seeking to help others who share the same ideals are my core motivations.
+          </p>
+          <br>
+          <p class="approach">I'll take your values &amp; motivations into account when designing your website to ensure that it achieves your goals. There's only one business like yours, so I'll make sure your website is built just for you. Here are the main steps I'll take to get there.
+          </p>
+        </section>
+        <section id="my-process">
+          <div class="step-container">
+            
+            <div class="step"><h3>RESEARCH</h3>
+            <p>We'll identify your goals &amp; the purpose of your website, specify your target audience, and assess other websites in your field so I can better understand your unique situation.</p></div>
+            <div class="step"><h3>PLAN</h3>
+            <p>When we clarify your goals, we'll narrow down what type of website fits your needs, it's content &amp; features, and map out it's basic structure.</p></div>
+            <div class="step"><h3>DESIGN</h3>
+            <p>I'll provide you with two stages of proofs. First I'll lay out the site's elements and features in a basic mockup. When you approve, I'll create a second mockup incorporating your brand's colors, typpography, and imagery.</p></div>
+            <div class="step"><h3>DEVELOP</h3>
+            <p>Once you like where the design is going, I'll begin developing your website. I'll remain available for you to contact and will update you along the way to share progress.</p></div>
+            <div class="step"><h3>LAUNCH</h3>
+            <p>Before launching your website I'll test dozens of components to ensure that everything is working properly. Then your new website is ready to go!</p></div>
+            <div class="step"><h3>MAINTAIN</h3>
+            <p>Depending on your needs, your website might require content updates, promotion, or other general maintenance. I'm here to make sure you're on the right track once your website is up.</p></div>
+          </div>
+          <h2 class="contact-link"><a href="index.html#p5-link">let's get to work.</a></h2>
+        </section>
         
       </div>
       
@@ -93,7 +135,7 @@
 
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/project-script.js"></script>
 </body>
