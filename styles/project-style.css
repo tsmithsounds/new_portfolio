@@ -172,8 +172,8 @@ header h2 {
   background-color: #3eb6d4;
   width: 49%;
   height: auto;
-  margin-top: 2%;
-  padding: 3%;
+  margin-top: 1.9vw;
+  padding: 2.1vw;
   box-sizing: border-box;
 }
 
@@ -211,6 +211,7 @@ header h2 {
 
 .hero {
   margin-top: 90px;
+  
 }
 
 .hero img {
@@ -281,7 +282,7 @@ header h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 60%;
+  padding-top: 48vw;
   transition: .3s;
 }
 
@@ -325,7 +326,7 @@ header h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 75%;
+  padding-top: 60vw;
   transition: .3s;
 }
 
@@ -350,7 +351,7 @@ header h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 75%;
+  padding-top: 60vw;
   transition: .3s;
 }
 
@@ -361,7 +362,7 @@ header h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 70%;
+  padding-top: 56vw;
   transition: .3s;
 }
 
@@ -387,7 +388,7 @@ header h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 70%;
+  padding-top: 56vw;
   transition: .3s;
 }
 
@@ -424,7 +425,7 @@ header h2 {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 67%;
+  padding-top: 54vw;
   transition: .3s;
 }
 
@@ -436,28 +437,32 @@ header h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 81%;
+  padding-top: 61vw;
   transition: .3s;
 }
 
 .yw-hero1 {
   background-image: url(../images/yw_purpose.jpg);
   transition: .3s;
+  padding-top: 61vw;
 }
 
 .yw-hero2 {
   background-image: url(../images/yw_flyer.png);
   transition: .3s;
+  padding-top: 64vw;
 }
 
 .yw-hero3 {
   background-image: url(../images/yw_t2t.jpg);
   transition: .3s;
+  padding-top: 61vw;
 }
 
 .yw-hero4 {
   background-image: url(../images/yw_pride.jpg);
   transition: .3s;
+  padding-top: 61vw;
 }
 
 
@@ -497,7 +502,7 @@ header h2 {
   width: 100%;
   height: 0;
   background-image: url(../images/album_cover_small.jpg);
-  padding-top: 100%;
+  padding-top: 81vw;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -505,6 +510,7 @@ header h2 {
 
 .tn7-hero1 {
   background-image: url(../images/album_cover_small.jpg);
+  padding-top: 81vw;
 }
 
 .tn7-hero2 {
@@ -741,7 +747,7 @@ footer a:hover {
   
   .step {
     width: 100%;
-    padding: 5%;
+    padding: 3.5vw;
   }
   
  
@@ -812,6 +818,12 @@ footer a:hover {
     font-size: .75em;
   }
   
+}
+
+@media (max-height: 599px) {
+  .button {
+    bottom: 35vh;
+  }
 }
 
 

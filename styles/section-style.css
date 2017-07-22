@@ -49,10 +49,6 @@ header {
   width: 100%;
 }
 
-header h1 {
-  
-}
-
 header h2 {
   color: #fff32c;
   text-align: right;
@@ -125,7 +121,7 @@ header h2 {
 
 .proj-parent:hover .proj-child {
   transform: scale(1.05);
-  -webkit-filter: brightness(90%) grayscale(50%);
+  -webkit-filter: brightness(85%) grayscale(20%);
   transition: .2s;
 }
 
@@ -245,6 +241,35 @@ footer a:hover {
 }
 
 
+
+@media (max-width: 800px) {
+  
+  .g-project {
+    width: 100%;
+    height: 45vw;
+    max-width: inherit;
+  }
+  
+  .proj-button {
+    width: 65%;
+    font-size: 1em; 
+  }
+
+  
+}
+  
+  
+  @media (max-width: 599px) {
+  
+    .proj-button {
+      font-size: .7em;
+      height: 30px;
+      line-height: 30px;
+    }
+    
+  
+}
+  
 
 
 

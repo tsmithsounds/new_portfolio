@@ -66,7 +66,7 @@ $(document).ready(function() {
   $('#brand-thumb2').click(function() {
     $('.brand-hero').removeClass('brand-hero1 brand-hero3');
     $('.brand-hero').addClass('brand-hero2');
-    $('#caption1').text('Your business card can help make a great first impression. To give clients a personal touch and stand out from the crowd, I hand-painted the edges of my cards.');
+    $('#caption1').text('Your business card can help make a great first impression. To give clients a personal touch and some extra pop, I hand-painted the edges of my cards.');
   });
   
   $('#brand-thumb3').click(function() {

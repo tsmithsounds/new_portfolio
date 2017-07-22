@@ -16,8 +16,16 @@ $(document).ready(function() {
     } 
   }); 
 
+  
+// Mobile Height Resize on Scroll Fix
+  
+  if (width <=599 && width < height) {
+    var viewportHeight = $('.page').innerHeight();
+    $('.page').css({ height: viewportHeight });
+}
 
-
+  
+// On / Off Switch  
   
 var cine = document.getElementById('cine-video');  
   
@@ -29,7 +37,8 @@ var cine = document.getElementById('cine-video');
     }
 });
     
-
+  
+// Project Button Hover
 
 $('.parent').mouseenter(function() {
   $(this).find('.project-button').addClass('project-button2');
@@ -39,7 +48,7 @@ $('.parent').mouseleave(function() {
 });
   
   
-  
+ // Rearrange Home Page Elements 
 
   var width = $(window).width();
   var height = $(window).height();
@@ -50,6 +59,8 @@ $('.parent').mouseleave(function() {
   } 
 
   
+  // Remove Video on Mobile
+  
   if (width <= 599 || height <=599) {
     $('#cine-video').remove();  
     $('#video-switch').remove();
@@ -57,6 +68,8 @@ $('.parent').mouseleave(function() {
   }
   
 
+  // Form Recenter
+  
   if (width <= 599) {
     $(window).resize(function() {
       var newHeight = $(window).height();

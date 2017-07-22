@@ -15,11 +15,92 @@ body, html{
   
 }
 
-
 .page {
   width: 100%;
   height: 54vw;
 }
+
+.about-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 62vw;
+  background: linear-gradient(#fffef9, #efefef);
+}
+
+.about-left {
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-title {
+  line-height: inherit;
+  text-align: left;
+  color: #3eb6d4;
+  width: 90%;
+  margin-bottom:3%;
+}
+
+.about-me-container {
+  width: 90%;
+  height: auto; 
+}
+
+.about-me {
+  font-weight: 200;
+  font-size: 1.2em;
+  color: #292e33;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 56%;
+ 
+}
+
+.about-icon {
+  height: 32vw;
+  padding-left: 7%;
+  /*filter: drop-shadow(60px 100px 50px #222);*/
+}
+
+
+#your-business {
+  height: 90px;
+  background: url(../images/your_business.svg) no-repeat;
+  background-size: contain;
+  margin-top: 5%;
+}
+
+
+
+
+
+.break-dark {
+  width: 100%;
+  background-color: #292e33;
+}
+
+.break-light {
+  width: 100%;
+  background-color: #3eb6d4;
+}
+
+.break-top {
+  height: 80px;
+}
+
+.break-bottom {
+  height: 50px;
+}
+
 
 .p-two, .p-four {
   background-color: #292e33;
@@ -324,18 +405,18 @@ li a:hover {
 }
 
 .web-project {
-  background-image: url(../images/laptop_mockup_website.jpg);
+  background-image: url(../images/web_project.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .graphic-project {
-  background-image: url(../images/klipsch_thumb.jpg);
-  background-position: 80%;
+  background-image: url(../images/klipsch_project.jpg);
+
 }
 
 .sound-project {
-  background-image: url(../images/album_cover_small.jpg);
+  background-image: url(../images/sound_project.jpg);
 }
 
 
@@ -729,6 +810,48 @@ footer li {
     margin-top: 0;
   }
   
+  .about-page {
+    height: 100vh;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-left, .about-right {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .about-right {
+    padding: 0 10vw;
+    flex: 1;
+  }
+  
+  .about-me {
+    flex: 1;
+    font-size: 1em;
+  }
+  
+  .about-icon {
+    padding: 0;
+    margin: 5vh 0;
+  }
+  
+  .about-me-container {
+    width: 100%;
+    flex: 1;
+  }
+  
+  #about-title {
+    font-size: 10vw;
+    width: 100%;
+  }
+  
+  #your-business {
+    width: 100%;
+  }
+  
   .page {
     width: 100vw;
     height: 100vh;
@@ -956,18 +1079,18 @@ footer li {
   }
 
  .web-project {
-  background-image: url(../images/laptop_mockup_website.jpg);
+  background-image: url(../images/web_project.jpg);
   background-position: center;
   background-size: cover;
 }
 
   .graphic-project {
-    background-image: url(../images/klipsch_thumb.jpg);
-    background-position: 80%;
+    background-image: url(../images/klipsch_project.jpg);
+  
   }
 
   .sound-project {
-    background-image: url(../images/album_cover_small.jpg);
+    background-image: url(../images/sound_project.jpg);
   }
   
    .contact-skill-title {
@@ -1114,18 +1237,30 @@ footer li {
 }
 
 
-/* Phone Portrait */
+/* Phone Landscape */
 
-  @media (max-height: 599px) {
+  @media (max-height: 599px) and (orientation: landscape) {
   
     .p-one {
       background-image: url(../images/metolius_background.png);
       background-size: cover;
       background-repeat: no-repeat;
   }
+    .page {
+      height: 130vw;
+    }
+    
+    .about-page {
+      min-height: 700px;
+    }
+    
+    nav ul li a {
+      height: 7vh;
+      line-height: 7vh;
+    }
     
 }
-  
+
 
 
 
@@ -1133,6 +1268,18 @@ footer li {
 
   @media (min-width: 600px) and (max-width: 1024px) { 
     
+    .about-page {
+      height: 100vh;
+    }
+    
+    .about-me {
+      font-size: 1em;
+      line-height: 1.35em;
+    }
+    
+    #your-business {
+      width: 90%;
+    }
     
     .title {
       width: 70vw;
@@ -1325,6 +1472,49 @@ footer li {
   nav ul li a:hover{
     width: 19vw;
     margin-top: 0;
+  }
+    
+  .about-page {
+    height: 100vh;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-left, .about-right {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .about-right {
+    padding: 0 5vw;
+    flex: 1;
+  }
+  
+  .about-me {
+    flex: 1;
+    font-size: 1.25em;
+  }
+  
+  .about-icon {
+    padding: 0;
+    margin: 8vh 0;
+  }
+  
+  .about-me-container {
+    width: 100%;
+    flex: 1;
+  }
+  
+  #about-title {
+    font-size: 10vw;
+    width: 100%;
+  }
+  
+  #your-business {
+    width: 100%;
+    margin-bottom: 10vh
   }
   
   .page {
@@ -1559,17 +1749,17 @@ footer li {
   }
 
   .web-project {
-  background-image: url(../images/laptop_mockup_website.jpg);
+  background-image: url(../images/web_project.jpg);
   background-position: center;
 }
 
   .graphic-project {
-    background-image: url(../images/klipsch_thumb.jpg);
-    background-position: 80%;
+    background-image: url(../images/klipsch_project.jpg);
+  
   }
 
   .sound-project {
-    background-image: url(../images/album_cover_small.jpg);
+    background-image: url(../images/sound_project.jpg);
   }
   
   .contact-skill-title {
