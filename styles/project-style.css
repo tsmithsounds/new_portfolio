@@ -387,7 +387,6 @@ header h2 {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 0;
   padding-top: 56vw;
   transition: .3s;
 }
@@ -826,6 +825,69 @@ footer a:hover {
   }
 }
 
+
+@media (min-width: 1500px) {
+  .website-hero, .photo-hero {
+    padding-top: 840px;
+  }
+  
+  .brand-hero {
+    padding-top: 720px;
+  }
+  
+  .poster-hero, .card-hero {
+    padding-top: 900px;
+  }
+  
+  .klipsch_hero {
+    padding-top: 810px;
+  }
+  
+  .yw-hero, .yw-hero1, .yw-hero3, .yw-hero4 {
+    padding-top: 915px;
+  }
+  
+  .yw-hero2 {
+    padding-top: 960px;
+  }
+  
+  .tn7-hero, .tn7-hero1 {
+    padding-top: 1215px;
+  }
+  
+  .tn7-hero2, .tn7-hero3, .tn7-hero4, .tn7-hero5 {
+    padding-top: 810px;
+  } 
+  
+  .tn7-thumb {
+    max-width: 228px;
+    max-height: 152px;
+  }
+  
+  .yw-thumb {
+    max-width: 285px;
+    max-height: 180px;
+  }
+  
+  header h1 {
+    font-size: 4.3em;
+    line-height: inherit;
+  }
+  
+  header h2 {
+    font-size: 5.75em;
+    line-height: inherit;
+  }
+  
+  .forward-button, .back-button {
+    max-width: 150px;
+  }
+  
+  .button-text {
+    font-size: 1.31em;
+  }
+
+}
 
 
 

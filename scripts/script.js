@@ -18,12 +18,12 @@ $(document).ready(function() {
 
   
 // Mobile Height Resize on Scroll Fix
-  
+ /* 
   if (width <=599 && width < height) {
     var viewportHeight = $('.page').innerHeight();
     $('.page').css({ height: viewportHeight });
 }
-
+*/
   
 // On / Off Switch  
   
