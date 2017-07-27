@@ -866,11 +866,11 @@ footer li {
   
   
   #your-business {
-    height: 50px
+    height: 12.1vw;
   }
     
     #stand-out {
-      height: 25px;
+      height: 6.3vw;
     }
   
   .page {
@@ -1264,7 +1264,7 @@ footer li {
   @media (max-height: 599px) and (orientation: landscape) {
   
     .p-one {
-      background-image: url(../images/metolius_background.png);
+      background-image: url(../images/metolius_background.jpg);
       background-size: cover;
       background-repeat: no-repeat;
   }
@@ -1279,6 +1279,14 @@ footer li {
     nav ul li a {
       height: 7vh;
       line-height: 7vh;
+    }
+    
+    #your-business {
+      height: 7.3vw;
+    }
+    
+    #stand-out {
+      height: 3.8vw;
     }
     
 }
