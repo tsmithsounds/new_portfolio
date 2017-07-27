@@ -476,6 +476,13 @@ header h2 {
   width: 19vw;
   height: 12vw;
   cursor: pointer;
+  transition: .1s;
+}
+
+.yw-thumb:hover {
+  transition: .1s;
+  outline: solid 3px #fff32c;
+  outline-offset: -3px;
 }
 
 #yw-thumb-1 {
@@ -545,8 +552,17 @@ header h2 {
   height: 10vw;
   cursor: pointer;
   margin-top: 1vw;
+  transition: .1s;
 }
 
+.tn7-thumb:hover {
+  transition: .1s;
+  outline: solid 3px #fff32c;
+  outline-offset: -3px;
+}
+  
+  
+  
 #tn7-thumb-1 {
   background-image: url(../images/tn7_cover_thumb.jpg);
   background-size: cover;
