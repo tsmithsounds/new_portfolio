@@ -224,10 +224,17 @@ header h2 {
   justify-content: space-between;
 }
 
+.thumb img:hover {
+  transition: .1s;
+  outline: solid 3px #fff32c;
+  outline-offset: -3px;
+}
+
 .thumb img{
   width: 30%;
   height: 30%;
   cursor: pointer;
+  transition: .1s;
 }
 
 

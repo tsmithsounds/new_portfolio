@@ -159,26 +159,26 @@ $(document).ready(function() {
   $('#yw-thumb-1').click(function() {
     $('.yw-hero').removeClass('yw-hero2 yw-hero3 yw-hero4');
     $('.yw-hero').addClass('yw-hero1');
-    $('#yw-caption').text('The "Shop with Purpose" campaign ran in Fall 2016 to promote the benefits of supporting the variety of socially responsible brands carried at Yellow Wood. Examples shown are a quarter page newspaper layout and direct mail flyer.');
+    $('#yw-caption').text('Quarter page newspaper layout for the "Shop with Purpose" campaign, which ran in Fall 2016 to promote the benefits of supporting the variety of socially responsible brands carried at Yellow Wood.');
   });
   
   $('#yw-thumb-2').click(function() {
     $('.yw-hero').removeClass('yw-hero1 yw-hero3 yw-hero4');
     $('.yw-hero').addClass('yw-hero2');
-    $('#yw-caption').text('The "Shop with Purpose" campaign ran in Fall 2016 to promote the benefits of supporting the variety of socially responsible brands carried at Yellow Wood. Examples shown are a quarter page newspaper layout and direct mail flyer.');
+    $('#yw-caption').text('Direct mail flyer for the "Shop with Purpose" campaign, which ran in Fall 2016 to promote the benefits of supporting the variety of socially responsible brands carried at Yellow Wood.');
   });
   
   $('#yw-thumb-3').click(function() {
     $('.yw-hero').removeClass('yw-hero1 yw-hero2 yw-hero4');
     $('.yw-hero').addClass('yw-hero3');
-    $('#yw-caption').text('Another newspaper ad from a campaign ran in Fall 2016 to promote Yellow Wood\'s variety of technical and everyday product.');
+    $('#yw-caption').text('Newspaper ad from a campaign, which ran in Fall 2016 to promote Yellow Wood\'s variety of technical and everyday product.');
   });
   
   
   $('#yw-thumb-4').click(function() {
     $('.yw-hero').removeClass('yw-hero1 yw-hero2 yw-hero3');
     $('.yw-hero').addClass('yw-hero4');
-    $('#yw-caption').text('This ad ran in June to show support for Pride Month and featured one of everyone\'s favorite products, the ENO hammock.');
+    $('#yw-caption').text('Newspaper ad, which ran in June to show support for Pride Month and featured one of everyone\'s favorite products, the ENO hammock.');
   });
   
   // TN7
@@ -192,25 +192,25 @@ $(document).ready(function() {
   $('#tn7-thumb-2').click(function() {
     $('.tn7-hero').removeClass('tn7-hero1 tn7-hero3 tn7-hero4 tn7-hero5');
     $('.tn7-hero').addClass('tn7-hero2');
-    $('#tn7-caption').text('The final product - digipak design with liner notes. I was lucky to have Zachary\'s great artwork when designing the packaging layout.');
+    $('#tn7-caption').text('The final product - front.');
   });
                           
   $('#tn7-thumb-3').click(function() {
     $('.tn7-hero').removeClass('tn7-hero1 tn7-hero2 tn7-hero4 tn7-hero5');
     $('.tn7-hero').addClass('tn7-hero3');
-    $('#tn7-caption').text('The final product - digipak design with liner notes. I was lucky to have Zachary\'s great artwork when designing the packaging layout.');
+    $('#tn7-caption').text('The final product - back.');
   });
                           
   $('#tn7-thumb-4').click(function() {
     $('.tn7-hero').removeClass('tn7-hero1 tn7-hero2 tn7-hero3 tn7-hero5');
     $('.tn7-hero').addClass('tn7-hero4');
-    $('#tn7-caption').text('The final product - digipak design with liner notes. I was lucky to have Zachary\'s great artwork when designing the packaging layout.');
+    $('#tn7-caption').text('Digipak design with liner notes. I was lucky to have Zachary\'s great artwork when designing the packaging layout.');
   });
   
   $('#tn7-thumb-5').click(function() {
     $('.tn7-hero').removeClass('tn7-hero1 tn7-hero2 tn7-hero3 tn7-hero4');
     $('.tn7-hero').addClass('tn7-hero5');
-    $('#tn7-caption').text('The final product - digipak design with liner notes. I was lucky to have Zachary\'s great artwork when designing the packaging layout.');
+    $('#tn7-caption').text('Liner notes.');
   });
   
   
