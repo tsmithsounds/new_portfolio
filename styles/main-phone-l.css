@@ -1,0 +1,37 @@
+/* Phone Landscape */
+
+  @media (max-height: 599px) and (orientation: landscape) {
+    
+    * {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+  -webkit-tap-highlight-color: transparent; 
+}
+  
+  
+    .p-one {
+      background-image: url(../images/metolius_background.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+   .page {
+      height: 130vw;
+    }
+    
+    .about-page {
+      min-height: 700px;
+    }
+    
+    nav ul li a {
+      height: 7vh;
+      line-height: 7vh;
+    }
+    
+    #your-business {
+      height: 7.3vw;
+    }
+    
+    #stand-out {
+      height: 3.8vw;
+    }
+    
+}

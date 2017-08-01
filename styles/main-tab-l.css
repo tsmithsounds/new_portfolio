@@ -1,0 +1,167 @@
+/* Tablet Landscape */
+
+  @media (min-width: 600px) and (max-width: 1024px) { 
+       
+    * {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+  -webkit-tap-highlight-color: transparent; 
+}
+  
+    .about-page {
+      height: 100vh;
+    }
+    
+    .about-me {
+      font-size: 1em;
+      line-height: 1.35em;
+    }
+    
+    #your-business {
+      width: 90%;
+    }
+    
+    .title {
+      width: 70vw;
+    }
+    
+    #site-title a{
+      height: 25.5vw;
+    }
+    
+    #attributes {
+      font-size: 4.3vw;
+    }
+    
+    .page {
+      height: 100vh;
+      
+    }
+    
+    #video-wrapper {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    #cine-video {
+      height: 100vh;
+      width: auto;
+      position: absolute;
+      z-index: -1;
+    
+    }
+    
+    
+    
+    nav li a{
+      display: block;
+      list-style-type: none;
+      text-decoration: none;
+      margin-top: 10px;
+      width: 8vw;
+      background-color: #e64c4e;
+      color: #fff32c;
+      overflow: hidden;
+      text-align: center;
+      line-height: 30px;
+      -webkit-transition: .6s;
+      -o-transition: .6s;
+      transition: .6s;
+      font-size: 1.2vw;
+    }
+
+    li a:hover {
+      width: 8vw;
+      background-color: #e64c4e;
+      color: #fff32c;
+    }
+    
+     .onoffswitch {
+    top: 93vh;
+  }
+    
+    .p-tag {
+     font-size: 3.3vw; 
+    }
+   
+    .project-box {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    
+    .project {
+      height: 60%;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      top: 5%;
+    }
+    
+    .p-skills-container {
+      width: 90%;
+      padding-left: 0;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin-bottom: 0;
+    }
+
+    .p-skill-title, .p-skills {
+      text-align: left;
+    }
+
+    .p-skill-title {
+      color: #fff32c;
+      font-size: 3vw;
+      letter-spacing: 1px;
+    }
+
+    .p-skills {
+      font-size: 2.5vw;
+      font-weight: 200;
+      color: #fffef9;
+    }
+
+    .p-five {
+      height: 87vh;
+    }
+   
+    .contact-skill-title {
+      font-size: 2.5vw;
+    }
+    
+    .contact-skills {
+      font-size: 2vw
+    }
+    
+    .p-top-container {
+      padding-left: 1vw;
+    }
+
+    .p-bottom-container {
+      text-align: right;
+    }
+    
+    .p-icon {
+      padding-left: 0;
+      width: auto;
+      height: 55vh;
+    }
+    
+    .modal-content p{
+      font-size: 1em;
+      padding: 0;
+    }
+    
+    #close {
+      font-size: 2.5em;
+    }
+    
+  }
+    

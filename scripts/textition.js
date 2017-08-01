@@ -7,18 +7,16 @@
 
 (function($) {
 	$.fn.textition = function(options) {
-		
     var a = $(window).width();
     $(window).on('resize', function() {
         var b = $(window).width();
         if (a !== b) {
-          this.location.href = this.location.href;
+          location.reload();
         }
       });
     
     
-    
-
+   
 		
 		// ----------------
 		// VARS
