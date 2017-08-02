@@ -17,13 +17,33 @@ $(document).ready(function() {
   }); 
 
   
-// Mobile Height Resize on Scroll Fix
- /* 
-  if (width <=599 && width < height) {
-    var viewportHeight = $('.page').innerHeight();
-    $('.page').css({ height: viewportHeight });
-}
-*/
+  
+// Detect Touch
+  
+  
+window.addEventListener('touchstart', function onFirstTouch() {
+  
+  if (width > 600) {
+    $('nav li a').css({'color': '#fff32c', 'width': '8vw'});
+  }
+  
+  
+  
+  // we could use a class
+  //document.body.classList.add('user-is-touching');
+  
+  // or set some global variable
+  //window.USER_IS_TOUCHING = true;
+
+  // or set your app's state however you normally would
+  //myFrameworkOfChoice.dispatchEvent('USER_IS_TOUCHING', true);
+
+  // we only need to know once that a human touched the screen, so we can stop listening now
+  window.removeEventListener('touchstart', onFirstTouch, false);
+}, false);
+  
+  
+  
   
 // On / Off Switch  
   
